@@ -1,0 +1,133 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #15314b, #1d4f6b);
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    color: #1d2a38;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.20);
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #15314b;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #4b5d72;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #1e3d56;
+}
+
+.subject-row {
+    background: #f0f6ff;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 130px 130px 60px;
+    gap: 12px;
+    align-items: center;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.subject-row input,
+.subject-row select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #c9d7ef;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.subject-row input:focus,
+.subject-row select:focus {
+    border-color: #1e88e5;
+    background: #ffffff;
+}
+
+.removeBtn {
+    background: #f44336;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.removeBtn:hover {
+    background: #c62828;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.add {
+    background: #1e88e5;
+    color: white;
+}
+
+.add:hover {
+    background: #0d6fcc;
+}
+
+.calc {
+    background: #008f4f;
+    color: white;
+}
+
+.calc:hover {
+    background: #00733f;
+}
+
+.result {
+    margin-top: 25px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 800;
+    color: #15314b;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #4b5d72;
+    font-size: 15px;
+}
