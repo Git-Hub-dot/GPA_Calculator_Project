@@ -131,3 +131,110 @@ body {
     color: #4b5d72;
     font-size: 15px;
 }
+
+
+/* ─── Responsive: Tablet (max 600px) ─── */
+@media (max-width: 600px) {
+    body {
+        padding: 30px 10px;
+    }
+
+    .container {
+        padding: 24px 18px;
+        border-radius: 14px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .subject-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        padding: 14px;
+    }
+
+    /* Subject name spans full width */
+    .subject-row .subName {
+        grid-column: 1 / -1;
+    }
+
+    /* Remove button stays compact */
+    .subject-row .removeBtn {
+        grid-column: 2;
+        justify-self: end;
+        width: 40px;
+    }
+
+    .subject-row .credit {
+        grid-column: 1;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .result {
+        font-size: 22px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+}
+
+
+/* ─── Responsive: Mobile (max 400px) ─── */
+@media (max-width: 400px) {
+    .container {
+        padding: 18px 12px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .subject-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    /* All fields full width on very small screens */
+    .subject-row .subName,
+    .subject-row .grade,
+    .subject-row .credit {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .subject-row .removeBtn {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .subject-row input,
+    .subject-row select {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    .result {
+        font-size: 20px;
+    }
+}
